@@ -161,7 +161,7 @@ $(document).ready(function () {
         share_bar[i].style.display = 'inline-block';
     }
 
-    /********************** Embed youtube video *********************/
+    /********************** Embed vimeo video *********************/
     $('.player').vimeo_player();
 
 
