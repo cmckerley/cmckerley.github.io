@@ -197,7 +197,7 @@ $(document).ready(function () {
             end: new Date('Apr 28, 2021 19:00'),
 
             // Event Address
-            address: 'Hewitt Oaks Weddings,Events,and Retreats, 205 Stillwell Rd, Bluffton, SC 29910',
+            address: 'Hewitt Oaks: Weddings+Events+Retreats, 205 Stillwell Rd, Bluffton, SC 29910, USA',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues, please contact Danielle at (864)661-8514."
