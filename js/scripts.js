@@ -214,8 +214,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'd713f393c66e258eb9e92aecfe9b44cd'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'd713f393c66e258eb9e92aecfe9b44cd' &&
+            MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxYmWOh94Mi1IllhiiP_fNNtBxPHs7Gm0Tx8YkUYC-zrLEUJi8/exec', data)
@@ -241,7 +241,10 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 32.2300116, lng: -80.9799566};
+    var location = {
+        lat: 32.2300116,
+        lng: -80.9799566
+    };
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -255,7 +258,10 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 34.6265007, lng: -82.9350081};
+    var la_fiesta = {
+        lat: 34.6265007,
+        lng: -82.9350081
+    };
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
@@ -361,7 +367,9 @@ var MD5 = function (string) {
     };
 
     function WordToHex(lValue) {
-        var WordToHexValue = "", WordToHexValue_temp = "", lByte, lCount;
+        var WordToHexValue = "",
+            WordToHexValue_temp = "",
+            lByte, lCount;
         for (lCount = 0; lCount <= 3; lCount++) {
             lByte = (lValue >>> (lCount * 8)) & 255;
             WordToHexValue_temp = "0" + lByte.toString(16);
@@ -380,12 +388,10 @@ var MD5 = function (string) {
 
             if (c < 128) {
                 utftext += String.fromCharCode(c);
-            }
-            else if ((c > 127) && (c < 2048)) {
+            } else if ((c > 127) && (c < 2048)) {
                 utftext += String.fromCharCode((c >> 6) | 192);
                 utftext += String.fromCharCode((c & 63) | 128);
-            }
-            else {
+            } else {
                 utftext += String.fromCharCode((c >> 12) | 224);
                 utftext += String.fromCharCode(((c >> 6) & 63) | 128);
                 utftext += String.fromCharCode((c & 63) | 128);
@@ -398,10 +404,22 @@ var MD5 = function (string) {
 
     var x = Array();
     var k, AA, BB, CC, DD, a, b, c, d;
-    var S11 = 7, S12 = 12, S13 = 17, S14 = 22;
-    var S21 = 5, S22 = 9, S23 = 14, S24 = 20;
-    var S31 = 4, S32 = 11, S33 = 16, S34 = 23;
-    var S41 = 6, S42 = 10, S43 = 15, S44 = 21;
+    var S11 = 7,
+        S12 = 12,
+        S13 = 17,
+        S14 = 22;
+    var S21 = 5,
+        S22 = 9,
+        S23 = 14,
+        S24 = 20;
+    var S31 = 4,
+        S32 = 11,
+        S33 = 16,
+        S34 = 23;
+    var S41 = 6,
+        S42 = 10,
+        S43 = 15,
+        S44 = 21;
 
     string = Utf8Encode(string);
 
