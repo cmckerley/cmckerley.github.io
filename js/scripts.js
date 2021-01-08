@@ -147,7 +147,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < share_bar.length; i++) {
         var html = 
-            '<iframe id="tweet-button" allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?via=McticulousC&amp;text=Chris%20&%20Danielle%20are%20getting%20hitched!&amp;hashtags=mckerleymatrimony&amp;count=horizontal" style="width:110px; height:20px;"></iframe>' +
+            '<iframe id="tweet-button" allowtransparency="true" frameborder="0" scrolling="no" src="<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Chris &amp; Danielle are getting hitched!" data-url="https://mckerley.wedding" data-via="McticulousC" data-hashtags="mckerleymatrimony" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>"></iframe>' +
 
             '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
 
