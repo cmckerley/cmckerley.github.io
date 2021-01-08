@@ -147,7 +147,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < share_bar.length; i++) {
         var html = 
-        '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
+        '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=button_count&action=like&size=small&share=true&width=150&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
 
         '<div class="g-plusone" data-size="medium"></div>';
 
