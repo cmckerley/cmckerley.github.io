@@ -146,15 +146,14 @@ $(document).ready(function () {
     s.parentNode.insertBefore(po, s);
 
     for (var i = 0; i < share_bar.length; i++) {
-        var html = 
-        '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
+        var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
         'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=McticulousC&amp;hashtags=mckerleymatrimony&amp;count=horizontal"' +
         'style="width:105px; height:21px;">' +
         '</iframe>' +
 
-            '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
+        '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
 
-            '<div class="g-plusone" data-size="medium"></div>';
+        '<div class="g-plusone" data-size="medium"></div>';
 
         // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
 
