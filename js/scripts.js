@@ -147,7 +147,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < share_bar.length; i++) {
         var html = 
-        '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=button_count&action=like&size=small&share=true&width=150&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
+        '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmckerley.wedding&width=450&layout=button_count&action=like&size=small&share=true&width=150&appId" width="123" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>' +
 
         '<div class="g-plusone" data-size="medium"></div>';
 
@@ -211,7 +211,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
         if (MD5($('#invite_code').val()) !== 'd713f393c66e258eb9e92aecfe9b44cd' &&
-            MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+            MD5($('#invite_code').val()) !== '63420e75150cbcc8f16d369ce5778861') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbx5gwtWUKFLxBn4PQ7rDJI4HuSYjnpAxI-2leqvIwChbmBtn1Pkk0eg/exec', data)
